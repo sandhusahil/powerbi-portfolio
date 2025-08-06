@@ -1,42 +1,109 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Power BI Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power BI Portfolio | [Your Name]</title>
   <style>
-    body {
-      font-family: sans-serif;
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    h1 { color: #f90; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f62fe;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #d0e2ff;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
     .project {
-      margin-bottom: 20px;
-      padding: 10px;
-      border-left: 4px solid #f90;
-      background-color: #f9f9f9;
+      background: white;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+    }
+
+    .project h2 {
+      color: #0f62fe;
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project p {
+      margin-bottom: 0.8rem;
+    }
+
+    .project a {
+      text-decoration: none;
+      color: white;
+      background: #0f62fe;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .project a:hover {
+      background: #0043ce;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <h1>Power BI Portfolio</h1>
-  <p>Hi, I’m [Your Name]. Here's a selection of my Power BI projects:</p>
+  <header>
+    <h1>[Your Name]'s Power BI Portfolio</h1>
+    <p>Data-Driven Insights | DAX Expertise | Interactive Dashboards</p>
+  </header>
 
-  <div class="project">
-    <h3>📊 Digital Marketing ROI Tracker</h3>
-    <p><a href="link-to-pbix-or-github-folder" target="_blank">View Project</a></p>
-  </div>
+  <main class="container">
+    <section class="project">
+      <h2>📊 Digital Marketing ROI Tracker</h2>
+      <p>Track and compare campaign performance across marketing channels using Power BI visualizations and advanced DAX calculations.</p>
+      <a href="https://github.com/your-username/project-link" target="_blank">View Project</a>
+    </section>
+  </main>
 
-  <div class="project">
-    <h3>🏦 Banking Credit Risk Model</h3>
-    <p><a href="link-to-project" target="_blank">View Project</a></p>
-  </div>
+  <footer>
+    <p>&copy; 2025 Sahilpreet Singh. Built with 💡 and Power BI.</p>
+  </footer>
 
-  <div class="project">
-    <h3>✈️ Airport Passenger Load Balancing</h3>
-    <p><a href="link-to-project" target="_blank">View Project</a></p>
-  </div>
 </body>
 </html>
